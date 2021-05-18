@@ -1,0 +1,10 @@
+---
+name: 'Remove microsoft APT package repos'
+description: "these are broken quite often, we don't need them"
+runs:
+  using: "composite"
+  steps:
+    - name: removing microsoft APT repositories
+      id: remove
+      shell: bash
+      run: ${{ github.action_path }}/remove_microsoft_apt_repos.sh
