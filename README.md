@@ -19,5 +19,5 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - uses: Thermondo/remove-microsoft-apt-repos
+      - uses: thermondo/remove-microsoft-apt-repos
 ```
